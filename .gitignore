@@ -1,2 +1,5 @@
 # Project exclude paths
 /node_modules/
+/.idea/
+/src/day1/index.js
+*.js
