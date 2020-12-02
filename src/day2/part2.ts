@@ -9,9 +9,7 @@ input.forEach(line => {
         const char = instructions[1].split(':')[0]
         const charAtFirstIndex = instructions[2].charAt(+limits[0] - 1) === char
         const charAtSecondIndex = instructions[2].charAt(+limits[1] - 1) === char
-        if (charAtFirstIndex && !charAtSecondIndex) {
-            validPasswords++
-        } else if (!charAtFirstIndex && charAtSecondIndex) {
+        if (charAtFirstIndex !== charAtSecondIndex) {
             validPasswords++
         }
     }
