@@ -12,3 +12,7 @@ export function readFileToStringArray(day: number, fileName = 'input') {
         .toString()
         .split("\n")
 }
+
+export function inRange(x: number, min: number, max: number) {
+    return ((x - min) * (x - max) <= 0);
+}
