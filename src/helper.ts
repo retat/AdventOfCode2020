@@ -16,3 +16,7 @@ export function readFileToStringArray(day: number, fileName = 'input') {
 export function inRange(x: number, min: number, max: number) {
     return ((x - min) * (x - max) <= 0);
 }
+
+export function countChar(char: string, word: string): number {
+    return (word.match(new RegExp(char, "g")) || []).length;
+}
